@@ -1,4 +1,5 @@
 $(document).ready(function() {	
+
 	$("div#notice").hide();	
 	var score = 0;
 	var sec = 30;
