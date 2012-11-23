@@ -16,7 +16,7 @@ $(document).ready(function() {
 			alert("You made it before the time ends! Extra 10 points for you! Current score:" +finalScore);
 			clearInterval(timer);
 			$("#score span").html(+finalScore);	
-			$("li.s2").html("<a href='activity2.html'><span></span> Aktiviti 2</a>");
+			$("li.s2").html("<a href='activity2.html?score="+finalScore+"'><span></span> Aktiviti 2</a>");
 			$("div#notice").show('slow');
 		}	
 		if(sec <= 10 && score == 4){
@@ -25,7 +25,7 @@ $(document).ready(function() {
 			alert("Time almost ran out! Minus 1 point for you! Current score:" +finalScore);
 			clearInterval(timer);
 			$("#score span").html(+finalScore);	
-			$("li.s2").html("<a href='activity2.html'><span></span> Aktiviti 2</a>");
+			$("li.s2").html("<a href='activity2.html?score="+finalScore+"'><span></span> Aktiviti 2</a>");
 			$("div#notice").show('slow');
 		}			
 	}, 1000);	

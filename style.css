@@ -117,6 +117,20 @@ span.exclaim { background-position: 0 -144px;  }
 .timer span { background: red; color: #fff; }
 #score span { background: yellow; color: #000;  }
 
+/************************************/
+/*       STYLING FOR ACTIVITY       */
+/*                                  */
+/*********** ACTIVITY 2 *************/
+
+span#activityScore { background: yellow; display: inline-block; padding: 4px; font-size: 13px; font-weight: bold; }
+span#tahniah { color: red; text-transform: uppercase; }
+.content ol.questions li { line-height: 180%; width: 90% !important; padding: 12px 0; }
+ol.questions input[type=text] { text-align: center; margin: 0 4px; width: 100px; border:0; border-bottom: 1px solid #666; }
+ol.questions input[type=text]:focus { outline: none; }
+ol.questions input.submit { margin: 15px 0 0 0; }
+ol.questions input.wrong { background: url(images/activity2/wrong.png) right center no-repeat;  padding-right: 15px; border-bottom: 1px solid red; }
+ol.questions input.correct { background: url(images/activity2/correct.png) right center no-repeat; padding-right: 15px; border-bottom: 1px solid green;}
+
 /*************** Pagination styles */
 
 div.pagination { margin: 20px 0 0 0; text-shadow: none;}
