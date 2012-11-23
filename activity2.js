@@ -1,5 +1,21 @@
 $(document).ready(function() {	
 
+window.onload = init;
+ 
+function init() {
+  disableDraggingFor(document.getElementById("draggingDisabled"));
+}
+ 
+function disableDraggingFor(element) {
+  // this works for FireFox and WebKit in future according to http://help.dottoro.com/lhqsqbtn.php
+  element.draggable = false;
+  // this works for older web layout engines
+  element.onmousedown = function(event) {
+                event.preventDefault();
+                return false;
+              };
+}
+
 	var succesSound = document.createElement('audio');
 	succesSound.preload = "auto";
 	succesSound.controls = true;
