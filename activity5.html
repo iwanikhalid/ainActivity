@@ -15,7 +15,7 @@
 <script src="jquery-ui-1.9.1/ui/jquery.ui.mouse.js"></script>
 <script src="jquery-ui-1.9.1/ui/jquery.ui.draggable.js"></script>
 <script src="jquery-ui-1.9.1/ui/jquery.ui.droppable.js"></script>
-<script src="activity1.js"></script>
+<script src="activity5.js"></script>
 <link rel="stylesheet" href="jquery-ui-1.9.1/demos.css">
 
 </head>
@@ -25,47 +25,37 @@
 			<div class="clearfix">
 				<h1 class="logo floatl"><a href="index.html"><span>Aktiviti Kemahiran Hidup</span></a></h1>
 			</div>
-			<div id="notice" class="notice greenbox">Tahniah!! Boleh maju ke aktiviti seterusnya!</div>
+			<div id="notice" class="notice greenbox">Anda mendapat <span id="activityScore"></span> markah dalam aktiviti ini. Sila maju ke aktiviti seterusnya!</div>
 			<div class="mainbox clearfix">
 				<div class="sidebar floatl">
 					<ul class="sidemenu">
-						<li class="begin s1"><a class="selected"  href="#"><span></span> Aktiviti 1</a></li>
+						<li class="begin s1"><a class="disabled"><span></span> Aktiviti 1</a></li>
 						<li class="s2"><a class="disabled"><span></span> Aktiviti 2</a></li>
 						<li class="s3"><a class="disabled"><span></span> Aktiviti 3</a></li>
 						<li class="s4"><a class="disabled"><span></span> Aktiviti 4</a></li>
-						<li class="s5"><a class="disabled"><span></span> Aktiviti 5</a></li>
+						<li class="s5"><a href="#" class="selected "><span></span> Aktiviti 5</a></li>
 						<li class="end s6"><a class="disabled"><span></span> Aktiviti 6</a></li>
 					</ul>
 				</div>
 				<div class="main floatl">					
 					<div class="content">
-						<h1>Aktiviti 1: Siapa Saya?</h1>
-						<p>Padankan gambar susun atur ruang dapur dengan bentuknya.</p>
-						<p class="timer">Anda ada <span>30</span> saat untuk tamatkan aktiviti ini.</p>
-						<p id="score">Markah terkini <span>0</span></p>
-						<table>
-							<thead>
-								<td>Susun Atur Ruang Dapur</td>
-								<td>Bentuk</td>
-							</thead>
-							<tr>
-								<td><div id="bentukL" class="gambar"><p><img src="images/activity1/l.jpg" /></p></div></td>
-								<td><div id="bentukHDrop" class="perkataan"><span></span><p>Bentuk H</p></div></td>
-							</tr>
-							<tr>
-								<td><div id="bentukI" class="gambar"><p><img src="images/activity1/i.jpg" /></p></div></td>
-								<td><div id="bentukUDrop" class="perkataan"><span></span><p>Bentuk U</p></div>	</td>
-							</tr>
-							<tr>
-								<td><div id="bentukH" class="gambar"><p><img src="images/activity1/h.jpg" /></p></div></td>
-								<td><div id="bentukLDrop" class="perkataan"><span></span><p>Bentuk L</p></div></td>
-							</tr>
-							<tr>
-								<td><div id="bentukU" class="gambar"><p><img src="images/activity1/u.jpg" /></p></div></td>
-								<td><div id="bentukIDrop" class="perkataan"><span></span><p>Bentuk I</p></div>	</td>
-							</tr>
-						</table>
-
+						<h2>Aktiviti 5: Sesuai atau tidak?</h2>
+						<p>Lihat gambar di bawah dan pilih barang yang tidak patut berada di dalam gambar.</p>
+						<p id="score">Markah terkumpul setakat ini <span></span></p>
+						
+						<div class="ruangtamu" id="draggingDisabled">
+							<img class="iron" src="images/activity5/brg/iron.png" />
+							<img class="paku" src="images/activity5/brg/paku.png" />
+							<img class="periuk" src="images/activity5/brg/periuk.png" />
+							<img class="pisautv" src="images/activity5/brg/pisautv.png" />
+							<img class="pisaushelf" src="images/activity5/brg/pisaushelf.png" />
+							<img class="cerek" src="images/activity5/brg/cerek.png" />
+							<img class="barangatascarpet" src="images/activity5/brg/barangatascarpet.png" />
+							<img class="kuali" src="images/activity5/brg/kuali.png" />
+							<img class="sudip" src="images/activity5/brg/sudip.png" />
+							<img class="mesinjahit" src="images/activity5/brg/mesinjahit.png" />
+						</div>
+						
 					</div>
 				</div>
 			</div>

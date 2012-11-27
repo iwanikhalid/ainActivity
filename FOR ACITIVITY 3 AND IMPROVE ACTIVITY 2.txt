@@ -1,0 +1,20 @@
+var score = 0;
+var answers = ["Iwani", "Khalid", "28"];
+
+$("#score span").html(+score);  
+
+$.each($('input'), function(i,v){
+    var self = $(this);
+   var answersGiven = self.val();
+    
+    if(answersGiven == answers[i])
+    {
+        self.html("Correct!");
+        score++;
+    }else{
+        self.html("Wrong!");
+        score-1;
+    }
+    $("#score span").html(+score);
+ })
+?

@@ -6,14 +6,14 @@ $(document).ready(function() {
 	var timer = setInterval(function() { 
 		$('p.timer span').text(sec--);
 		if (sec == -1) {
-			alert('Masa sudah tamat! Sila mula kembali!');
+			alert('Masa yang diberikan sudah tamat! Sila mula kembali!');
 			location.reload();
 			clearInterval(timer);
 		} 
 		if(sec >= 10 && score == 4){
 			var extraScore = 10;
 			var finalScore = +score+extraScore;
-			alert("You made it before the time ends! Extra 10 points for you! Current score:" +finalScore);
+			alert("Anda dapat menyiapkan aktiviti lebih awal dari masa yang ditetapkan! 10 markah lebih diberikan pada anda. Markah terkini: " +finalScore);
 			clearInterval(timer);
 			$("#score span").html(+finalScore);	
 			$("li.s2").html("<a href='activity2.html?score="+finalScore+"'><span></span> Aktiviti 2</a>");
@@ -22,7 +22,7 @@ $(document).ready(function() {
 		if(sec <= 10 && score == 4){
 			var extraScore = -1;
 			var finalScore = +score+extraScore;
-			alert("Time almost ran out! Minus 1 point for you! Current score:" +finalScore);
+			alert("Anda hampir tidak dapat menyiapkan aktiviti dalam masa yang ditetapkan. 1 markah ditolak. Markah terkini: " +finalScore);
 			clearInterval(timer);
 			$("#score span").html(+finalScore);	
 			$("li.s2").html("<a href='activity2.html?score="+finalScore+"'><span></span> Aktiviti 2</a>");
@@ -46,40 +46,40 @@ $(document).ready(function() {
 	}
 	
 	$(function() {
-		$( "#benang, #paku, #tukul, #gergaji, #paku" ).draggable({
+		$( "#bentukL, #bentukU, #bentukH, #bentukI" ).draggable({
 			revert: 'invalid',
 			scroll: false
 			//stack: ".boxArt"
 		});
 		
-		$( "#pakuDrop" ).droppable({
-			accept: "#paku",
+		$( "#bentukLDrop" ).droppable({
+			accept: "#bentukL",
 			hoverClass: "",
 			drop: function( event, ui ) {
 				var drop_p = $(this).offset();
 				var drag_p = ui.draggable.offset();
 				var left_end = drop_p.left - drag_p.left + 1;
-				var top_end = drop_p.top - drag_p.top + 1;
+				var top_end = drop_p.top - drag_p.top + 38;
 				ui.draggable.animate({
 					top: '+=' + top_end,
 					left: '+=' + left_end
 				});			
 				$( this )
 					.addClass( "ui-state-highlight" )
-					.find( "#pakuDrop p" )
+					.find( "p" )
 						.html( "Betul!" );
 					playSuccess();	
 					showScore();
 			}
 		});
-		$( "#tukulDrop" ).droppable({
-			accept: "#tukul",
+		$( "#bentukUDrop" ).droppable({
+			accept: "#bentukU",
 			hoverClass: "",
 			drop: function( event, ui ) {
 				var drop_p = $(this).offset();
 				var drag_p = ui.draggable.offset();
 				var left_end = drop_p.left - drag_p.left + 1;
-				var top_end = drop_p.top - drag_p.top + 1;
+				var top_end = drop_p.top - drag_p.top + 38;
 				ui.draggable.animate({
 					top: '+=' + top_end,
 					left: '+=' + left_end
@@ -92,14 +92,14 @@ $(document).ready(function() {
 					showScore();
 			}
 		});		
-		$( "#gergajiDrop" ).droppable({
-			accept: "#gergaji",
+		$( "#bentukIDrop" ).droppable({
+			accept: "#bentukI",
 			hoverClass: "",
 			drop: function( event, ui ) {
 				var drop_p = $(this).offset();
 				var drag_p = ui.draggable.offset();
 				var left_end = drop_p.left - drag_p.left + 1;
-				var top_end = drop_p.top - drag_p.top + 1;
+				var top_end = drop_p.top - drag_p.top + 38;
 				ui.draggable.animate({
 					top: '+=' + top_end,
 					left: '+=' + left_end
@@ -112,14 +112,14 @@ $(document).ready(function() {
 					showScore();
 			}
 		});
-		$( "#benangDrop" ).droppable({
-			accept: "#benang",
+		$( "#bentukHDrop" ).droppable({
+			accept: "#bentukH",
 			hoverClass: "",
 			drop: function( event, ui ) {
 				var drop_p = $(this).offset();
 				var drag_p = ui.draggable.offset();
 				var left_end = drop_p.left - drag_p.left + 1;
-				var top_end = drop_p.top - drag_p.top + 1;
+				var top_end = drop_p.top - drag_p.top + 38;
 				ui.draggable.animate({
 					top: '+=' + top_end,
 					left: '+=' + left_end

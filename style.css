@@ -18,7 +18,7 @@ h3 { font-size: 14px; }
 .wrapper { -moz-border-radius-bottomleft: 0; -webkit-border-bottom-left-radius: 0; -moz-border-radius-bottomright: 0; -webkit-border-bottom-right-radius: 0; border-radius-bottomleft: 0; border-radius-bottomright: 0; }
 .login { width: 450px; margin: 10% auto; }
 .sidebar { width: 181px; }
-.main { background: url(images/bgbottom.gif) repeat-x left bottom; padding: 10px 20px 20px 20px; width: 685px; min-height: 400px; height: auto !important; height: 400px; border: 1px solid #32548f; -webkit-border-radius: 8px; -moz-border-radius:8px; border-radius: 8px; -webkit-background-clip: padding-box; }
+.main { background: url(images/bgbottom.gif) repeat-x left bottom; padding: 10px 20px 20px 20px; width: 685px; min-height: 400px; height: auto !important; height: 400px; border: 1px solid #ccc; -webkit-border-radius: 8px; -moz-border-radius:8px; border-radius: 8px; -webkit-background-clip: padding-box; }
 .mainbox { margin: 15px 0;  }
 .content { }
 .content .notice { text-shadow: none; text-align: left; }
@@ -51,8 +51,9 @@ h3 { font-size: 14px; }
 .sidemenu li a.disabled, .sidemenu li a.disabled:hover { color: #32548F; opacity: 0.4; background: none; border-bottom: 1px solid #e3e3e3; }
 .sidemenu li a:hover, .sidemenu li a.selected { text-shadow: none; color: #333; background: #ccc;  border-top: 1px solid #eee; border-bottom: 1px solid #acacac; }
 .sidemenu li a span { vertical-align:bottom; width: 16px; height: 16px; display: inline-block; margin: 0 5px; }
-.sidemenu li.s1 a span { background: url(images/menu.png) no-repeat 0 -112px; }
+
 /* WILL ADD SOON
+.sidemenu li.s1 a span { background: url(images/menu.png) no-repeat 0 -112px; }
 .sidemenu li.s2 a span { background: url(images/icons.png) no-repeat 0 0; }
 .sidemenu li.s3 a span { background: url(images/icons.png) no-repeat 0 -96px; }
 .sidemenu li.s4 a span { background: url(images/icons.png) no-repeat 0 -112px; } 
@@ -106,30 +107,42 @@ span.exclaim { background-position: 0 -144px;  }
 
 .hidden { display: none !important; }
 
-/************************************/
-/*       STYLING FOR ACTIVITY       */
-/*                                  */
-/*********** ACTIVITY 1 *************/
+/***********************************************************************************************/
+/*       STYLING FOR ACTIVITY                                                                  */
+/*                                                                                             */
+/*********** ACTIVITY 1 ************************************************************************/
 
-.gambar img { width: 50px; height: 50px; }
-.perkataan span { display: block; width: 50px; height: 50px;}
+.gambar img { width: 150px; height: 118px; }
+.perkataan span { display: block; width: 150px; height: 150px;}
 .timer span, #score span { display: inline-block; padding: 4px; font-size: 13px; font-weight: bold; }
 .timer span { background: red; color: #fff; }
 #score span { background: yellow; color: #000;  }
 
-/************************************/
-/*       STYLING FOR ACTIVITY       */
-/*                                  */
-/*********** ACTIVITY 2 *************/
+/*********** ACTIVITY 2 ************************************************************************/
 
 span#activityScore { background: yellow; display: inline-block; padding: 4px; font-size: 13px; font-weight: bold; }
 span#tahniah { color: red; text-transform: uppercase; }
-.content ol.questions li { line-height: 180%; width: 90% !important; padding: 12px 0; }
-ol.questions input[type=text] { text-align: center; margin: 0 4px; width: 100px; border:0; border-bottom: 1px solid #666; }
+.content ol.questions li { line-height: 180%; width: 95% !important; padding: 12px 0; }
+ol.questions input[type=text] { text-align: center; margin: 0 4px; width: 120px; border:0; border-bottom: 1px solid #666; }
 ol.questions input[type=text]:focus { outline: none; }
 ol.questions input.submit { margin: 15px 0 0 0; }
 ol.questions input.wrong { background: url(images/activity2/wrong.png) right center no-repeat;  padding-right: 15px; border-bottom: 1px solid red; }
 ol.questions input.correct { background: url(images/activity2/correct.png) right center no-repeat; padding-right: 15px; border-bottom: 1px solid green;}
+
+/*********** ACTIVITY 5 ************************************************************************/
+
+.ruangtamu { width: 685px; height: 514px; background: url(images/activity5/ruangtamu.jpg) no-repeat; position: relative; }
+.ruangtamu img { position: absolute; cursor: default; }
+.ruangtamu img.iron { top: 448px; left: 153px; }
+.ruangtamu img.paku { top: 225px; left: 213px; }
+.ruangtamu img.periuk { top: 264px; left: 559px; }
+.ruangtamu img.pisautv { top: 201px; left: 420px; }
+.ruangtamu img.pisaushelf { top: 81px; left: 508px; }
+.ruangtamu img.cerek { top: 429px; left: 508px; }
+.ruangtamu img.barangatascarpet { top: 328px; left: 285px; }
+.ruangtamu img.kuali { top: 295px; left: 76px; }
+.ruangtamu img.sudip { top: 21px; left: 277px; }
+.ruangtamu img.mesinjahit { top: 304px; left:642px; }
 
 /*************** Pagination styles */
 

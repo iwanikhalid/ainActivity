@@ -47,42 +47,21 @@ function disableDraggingFor(element) {
 	function ScoreRight(){
 		activityScore++; 
 	}
-	function ScoreWrong(){
-		activityScore-1;   
-	}
 
-	$(".submit").click(function() {
+	$("img.iron, img.paku, img.periuk, img.pisautv, img.pisaushelf, img.cerek, img.barangatascarpet, img.kuali, img.sudip, img.mesinjahit").click(function() {
+		$(this).hide('slow');
+		ScoreRight();
+		$(".notice span#activityScore").html(+activityScore);
+		$("#score span").html(+score+activityScore);
 		
-		$.each($('input[type=text]'), function(i,v){
-		   var answersGiven = $(this).val();  
-		   var answers = ["perlindungan", "keselamatan", "sosial", "kekisi", "matahari", "lampu", "tahan lasak", "pencuci", "Pembersihan harian", "kaca", "Ruang dapur", "lampu meja"];
-			
-			if(answersGiven == answers[i])
-			{
-				$(this).addClass("correct");
-				ScoreRight();
-			}else{
-				$(this).addClass("wrong");
-				ScoreWrong();
-			}
-			$(".notice span#activityScore").html(+activityScore);
-			$("#score span").html(+score+activityScore);
-		 })	  
-		 $(".submit").hide("slow");
-		 $("div#notice").show('slow');
-		 $(function() {
-			$(document).scrollTop( $(".wrapper").offset().top );  
-		});
-		
-		if(activityScore == 12){ 
-			playSuccess();	
-			$(".notice span#tahniah").show();			
+		if(activityScore == 10){ 
+			playSuccess();			
+			$("div#notice").show('slow');
 		}
 
 		var finalScore = +score+activityScore
-		$("li.s3").html("<a href='activity3.html?score="+finalScore+"'><span></span> Aktiviti 3</a>");
+		$("li.s6").html("<a href='activity6.html?score="+finalScore+"'><span></span> Aktiviti 6</a>");
 		
-		
-	});	 
+	});
 	
 });
