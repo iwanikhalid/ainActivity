@@ -49,7 +49,9 @@ $(document).ready(function() {
 				ScoreRight();
 			}else{
 				self.addClass("wrong");
+				self.val(answers[i]);
 			}
+			
 			$(".notice span#activityScore").html(+activityScore);
 			$("#score span").html(+score+activityScore);
 			$(".submit").hide("slow");

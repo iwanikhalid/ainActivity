@@ -142,7 +142,7 @@ table.activity3 li { line-height: 22px; padding: 0; width: auto; border: none; }
 table.activity3 p { line-height: normal !important; }
 table.activity3 input[type=text] { text-align: left; margin: 0 3px; width: auto; border:0; border-bottom: 1px solid #666; }
 table.activity3 input[type=text]:focus { outline: none; }
-table.activity3 input.wrong { border-bottom: 1px solid red; }
+table.activity3 input.wrong { color: red; border-bottom: 1px solid red; }
 table.activity3 input.correct { border-bottom: 1px solid green; }
 
 /*********** ACTIVITY 4 ************************************************************************/
