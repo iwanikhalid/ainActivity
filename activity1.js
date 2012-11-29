@@ -18,6 +18,9 @@ $(document).ready(function() {
 			$("#score span").html(+finalScore);	
 			$("li.s2").html("<a href='activity2.html?score="+finalScore+"'><span></span> Aktiviti 2</a>");
 			$("div#notice").show('slow');
+			$(function() {
+				$(document).scrollTop( $(".wrapper").offset().top );  
+			});
 		}	
 		if(sec <= 10 && score == 4){
 			var extraScore = -1;
@@ -27,6 +30,9 @@ $(document).ready(function() {
 			$("#score span").html(+finalScore);	
 			$("li.s2").html("<a href='activity2.html?score="+finalScore+"'><span></span> Aktiviti 2</a>");
 			$("div#notice").show('slow');
+			$(function() {
+				$(document).scrollTop( $(".wrapper").offset().top );  
+			});
 		}			
 	}, 1000);	
 		
