@@ -1,6 +1,6 @@
 /***** Hi, I love peanut butter and mountain dew, you? ***/
 /**************** Styles **/
-body { font: 12px "Lucida Sans Unicode", Arial, Helvetica; text-shadow: #fff 1px 0 0; color: #333; background: #e7f2fd url(../images/bg.gif) repeat-x; }
+body { font: 14px "Lucida Sans Unicode", Arial, Helvetica; text-shadow: #fff 1px 0 0; color: #333; background: #e7f2fd url(../images/bg.gif) repeat-x; }
 a { text-decoration: none; color: #32548f; }
 a:hover { text-decoration: underline; }
 a.selected { font-weight: bold;  }
@@ -21,6 +21,7 @@ h3 { font-size: 14px; }
 .main { background: url(images/bgbottom.gif) repeat-x left bottom; padding: 10px 20px 20px 20px; width: 685px; min-height: 400px; height: auto !important; height: 400px; border: 1px solid #ccc; -webkit-border-radius: 8px; -moz-border-radius:8px; border-radius: 8px; -webkit-background-clip: padding-box; }
 .mainbox { margin: 15px 0;  }
 .content { }
+.content p { line-height: 22px; }
 .content .notice { text-shadow: none; text-align: left; }
 .footer { color: #666; text-shadow: none; margin: 10px 1px; padding: 10px; background: #f8f8f8; border-top: 1px solid #ccc; border-bottom: 1px solid #d9e7ff; }
 
@@ -129,6 +130,21 @@ ol.questions input.submit { margin: 15px 0 0 0; }
 ol.questions input.wrong { background: url(images/activity2/wrong.png) right center no-repeat;  padding-right: 15px; border-bottom: 1px solid red; }
 ol.questions input.correct { background: url(images/activity2/correct.png) right center no-repeat; padding-right: 15px; border-bottom: 1px solid green;}
 
+/*********** ACTIVITY 3 ************************************************************************/
+
+table.activity3 thead td { padding: 4px; text-align: center; }
+table.activity3 td { padding: 0; text-align: left; }
+table.activity3 tr td + td { width: 250px; }
+table.activity3 tr td + td + td { width: 150px; }
+table.activity3 tr td:first-child { width: 270px; }
+table.activity3 ul { margin: 0; padding: 0 10px 0 30px; }
+table.activity3 li { line-height: 22px; padding: 0; width: auto; border: none; }
+table.activity3 p { line-height: normal !important; }
+table.activity3 input[type=text] { text-align: left; margin: 0 3px; width: auto; border:0; border-bottom: 1px solid #666; }
+table.activity3 input[type=text]:focus { outline: none; }
+table.activity3 input.wrong { border-bottom: 1px solid red; }
+table.activity3 input.correct { border-bottom: 1px solid green; }
+
 /*********** ACTIVITY 4 ************************************************************************/
 
 span#count { color: #666; }
@@ -178,7 +194,7 @@ html>body .pagination { padding: 0; }
 .floatr { float: right; }
 .alignr { text-align: right; }
 .alignl { text-align: left; }
-.alignc { text-align: center; }
+.alignc { text-align: center !important; }
 .reset, p.reset { margin-top: 0; }
 
 /**************** Form Styles **/
