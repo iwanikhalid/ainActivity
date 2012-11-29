@@ -183,7 +183,7 @@ Here are the settings you can adjust:
 		$(function() {
 			$(document).scrollTop( $(".wrapper").offset().top );  
 		});
-		if(count <= 20) { activityScore = 100; }
+		if(count <= 25) { activityScore = 100; }
 		if(count >= 25) { activityScore = 50; }
 		if(count >= 30) { activityScore = 10; }
 		if(count >= 40) { activityScore = 0; alert("Maaf! Anda membuat terlalu banyak klik. Tiada markah untuk anda!"); }
