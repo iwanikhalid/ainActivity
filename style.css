@@ -129,6 +129,18 @@ ol.questions input.submit { margin: 15px 0 0 0; }
 ol.questions input.wrong { background: url(images/activity2/wrong.png) right center no-repeat;  padding-right: 15px; border-bottom: 1px solid red; }
 ol.questions input.correct { background: url(images/activity2/correct.png) right center no-repeat; padding-right: 15px; border-bottom: 1px solid green;}
 
+/*********** ACTIVITY 4 ************************************************************************/
+
+span#count { color: #666; }
+#boxcard { margin: 0 0 0 12px; width: 685px; z-index: 1; }
+	#boxcard div { float: left; width: 200px; height: 150px; background: #d9d9d9; margin: 5px; padding: 5px; border: 1px solid #999; cursor: pointer; -webkit-border-radius: .5em; -moz-border-radius: .5em; border-radius: .5em; -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5); -moz-box-shadow: 0 1px 2px rgba(0,0,0,.5); box-shadow: 0 1px 2px rgba(0,0,0,.5); z-index: 2; }
+	#boxcard div img { border: none; z-index: 3; }
+	.success { background: #84f119 !important; }
+	.opacity { opacity: .8; filter: alpha(opacity=80); }
+	
+#boxbutton { text-align: center; padding: 20px; }
+	.link { font-size: 18px; color: #000; text-decoration: none; background: #eee; padding: 5px 10px; -webkit-border-radius: .5em; -moz-border-radius: .5em; border-radius: .5em; }
+
 /*********** ACTIVITY 5 ************************************************************************/
 
 .ruangtamu { width: 685px; height: 514px; background: url(images/activity5/ruangtamu.jpg) no-repeat; position: relative; }
