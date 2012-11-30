@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Aktiviti Kemahiran Hidup</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+
+<link rel="stylesheet" href="jquery-ui-1.9.1/themes/base/jquery.ui.all.css">
+<script src="jquery-ui-1.9.1/jquery-1.8.2.js"></script>
+<script src="jquery-ui-1.9.1/ui/jquery.ui.core.js"></script>
+<script src="jquery-ui-1.9.1/ui/jquery.ui.widget.js"></script>
+<script src="jquery-ui-1.9.1/ui/jquery.ui.mouse.js"></script>
+<script src="jquery-ui-1.9.1/ui/jquery.ui.draggable.js"></script>
+<script src="jquery-ui-1.9.1/ui/jquery.ui.droppable.js"></script>
+<script src="activity6.js"></script>
+<link rel="stylesheet" href="jquery-ui-1.9.1/demos.css">
+
+</head>
+<body>
+	<div class="wrap">
+		<div class="wrapper">
+			<div class="clearfix">
+				<h1 class="logo floatl"><a href="index.html"><span>Aktiviti Kemahiran Hidup</span></a></h1>
+			</div>
+			<div id="notice" class="notice greenbox"><span id="tahniah">TAHNIAH!!</span> Anda mendapat <span id="activityScore"></span> markah dalam aktiviti ini.</div>
+			<div class="notice bluebox">Anda telah menamatkan keenam-enam aktiviti subjek Kemahiran Hidup. Tahniah! Kesemua aktiviti telah diaktifkan.</div>
+			<div class="mainbox clearfix">
+				<div class="sidebar floatl">
+					<ul class="sidemenu">
+						<li class="begin s1"><a class="disabled"><span></span> Aktiviti 1</a></li>
+						<li class="s2"><a class="disabled"><span></span> Aktiviti 2</a></li>
+						<li class="s3"><a class="disabled"><span></span> Aktiviti 3</a></li>
+						<li class="s4"><a class="disabled"><span></span> Aktiviti 4</a></li>
+						<li class="s5"><a class="disabled"><span></span> Aktiviti 5</a></li>
+						<li class="end s6"><a href="#" class="selected"><span></span> Aktiviti 6</a></li>
+					</ul>
+				</div>
+				<div class="main floatl">					
+					<div class="content">
+						<h2>Aktiviti 6: Soalan Objektif</h2>
+						<p>Arahan: Jawab <b>semua</b> soalan. Tiap – tiap soalan diikuti oleh empat pilihan jawapan iaitu A, B, C dan D. bagi tiap – tiap soalan, pilih <b>satu</b> jawapan sahaja.</p>
+						<p id="score">Markah terkumpul setakat ini <span></span></p>
+						<hr />
+						
+						<div id="q1" class="question">
+							<p class="soalan">1. Apakah fungsi ruang persendirian?</p>
+							<p class="gap">	
+								I. Tempat berehat<br />
+								II.	Membersih dan mengemas diri<br />
+								III. Berinteraksi dengan ahli keluarga<br />
+								IV.	Menyimpan barang – barang
+							</p>
+							<table>
+								<tr>
+									<td><label><input name="q1" id="q1a" type="radio" /> I dan II</label></td>
+									<td><label><input name="q1" id="q1b" type="radio" /> I dan IV</label></td>
+								</tr>
+								<tr>
+									<td><label><input name="q1" id="q1c" type="radio" /> II dan III</label></td>
+									<td><label><input name="q1" id="q1d" type="radio" /> III dan IV</label></td>								
+								</tr>
+							</table>
+						</div>
+						
+						<hr />
+						
+						<div id="q2" class="question">
+							<blockquote>Fatimah ingin mengecat bilik istirehat yang bersaiz kecil</blockquote>
+							<p class="soalan">
+								2. Apakah warna yang sesuai digunakan supaya biliknya kelihatan luas, sejuk, tenang dan harmoni?
+							</p>
+							<table>
+								<tr>
+									<td><label><input name="q2" id="q2a" type="radio" /> Jingga</label></td>
+									<td><label><input name="q2" id="q2b" type="radio" /> Kuning</label></td>
+								</tr>
+								<tr>
+									<td><label><input name="q2" id="q2c" type="radio" /> Biru Tua</label></td>
+									<td><label><input name="q2" id="q2d" type="radio" /> Hijau Muda</label></td>								
+								</tr>
+							</table>
+						</div>
+						
+						<hr />						
+
+						<div id="q3" class="question">
+							<p class="soalan"> 
+								3.	Antara berikut, yang manakah menunjukkan penggunaan jenis ruang tempat kediaman dengan <b>betul</b>?
+							</p>
+							<table>
+								<tr>
+									<td><label><input name="q3" id="q3a" type="radio" /> Zainuddin bercukur di ruang kerja</label></td>
+									<td><label><input name="q3" id="q3b" type="radio" /> Kim melayan tetamu di ruang persendirian</label></td>
+								</tr>
+								<tr>
+									<td><label><input name="q3" id="q3c" type="radio" /> Samy membersih kereta di ruang kerja</label></td>
+									<td><label><input name="q3" id="q3d" type="radio" /> Sarah bersarapan di ruang persendirian</label></td>								
+								</tr>
+							</table>
+						</div>
+						
+						<hr />								
+						
+						<div id="q4" class="question">
+							<p class="soalan"> 
+								4.	Antara berikut, tugasan yang manakah dilakukan secara berkala?
+							</p>
+							<table>
+								<tr>
+									<td><label><input name="q4" id="q4a" type="radio" /> Mencuci pakaian</label><br />
+									<label><input name="q4" id="q4b" type="radio" /> Menyapu lantai dengan penyapu rami</label><br />
+									<label><input name="q4" id="q4c" type="radio" /> Membersih mangkuk tandas dengan berus tandas</label><br />
+									<label><input name="q4" id="q4d" type="radio" /> Membersih sawang dengan berus siling</label></td>								
+								</tr>
+							</table>
+						</div>
+						
+						<hr />			
+
+						<div id="q5" class="question">
+							<p class="soalan"> 
+								5.	Rajah 1 menunjukkan sejenis lampu.
+							</p>
+							<p class="alignc"><img width="10%" height="10%" src="images/activity6/mentol.png" />
+								<br /><em>Rajah 1</em></p>
+							
+							<p>Antara berikut, jenis pencahayaan manakah akan diperoleh daripada lampu tersebut?</p>
+							<table>
+								<tr>
+									<td><label><input name="q5" id="q5a" type="radio" /> Pencahayaan am</label></td>
+									<td><label><input name="q5" id="q5b" type="radio" /> Pencahayaan langsung</label></td>
+								</tr>
+								<tr>
+									<td><label><input name="q5" id="q5c" type="radio" /> Pencahayaan tak langsung</label></td>
+									<td><label><input name="q5" id="q5d" type="radio" /> Pencahayaan khas</label></td>								
+								</tr>
+							</table>
+						</div>
+						
+						<hr />	
+
+						<div id="q6" class="question">
+							<p class="soalan"> 
+								6.	Apakah tujuan penjagaan dan pembersihan tempat kediaman?
+							</p>
+							<p class="gap">
+								I.	Mewujudkan keceriaan ruang<br />
+								II.	Menghindar pembiakan haiwan perosak<br />
+								III.	Memberi pencahayaan yang mencukupi<br />
+								IV.	Membolehkan kita bekerja dengan selamat
+							</p>
+							<table>
+								<tr>
+									<td><label><input name="q6" id="q6a" type="radio" /> I, II dan III</label></td>
+									<td><label><input name="q6" id="q6b" type="radio" /> I, II dan IV</label></td>
+								</tr>
+								<tr>
+									<td><label><input name="q6" id="q6c" type="radio" /> I, III dan IV</label></td>
+									<td><label><input name="q6" id="q6d" type="radio" /> II, III dan IV</label></td>								
+								</tr>
+							</table>
+						</div>
+						
+						<hr />	
+
+						<div id="q7" class="question">
+							<p class="soalan"> 
+								7.	Rajah 2 menunjukkan sejenis alat kelengkapan.
+							</p>
+							<p class="alignc"><img width="40%" height="40%" src="images/activity6/aircond.jpg" />
+								<br /><em>Rajah 2</em></p>
+							
+							<p>Antara berikut, faktor keselesaan tempat kediaman yang manakah berkaitan dengan alat terebut?</p>
+							<table>
+								<tr>
+									<td><label><input name="q7" id="q7a" type="radio" /> Keselamatan</label><br />
+									<label><input name="q7" id="q7b" type="radio" /> Pencahayaan</label><br />
+									<label><input name="q7" id="q7c" type="radio" /> Pengudaraan</label><br />
+									<label><input name="q7" id="q7d" type="radio" /> Skema warna</label></td>								
+								</tr>
+							</table>
+						</div>		
+
+						<hr />	
+
+						<div id="q8" class="question">
+							<p class="soalan"> 
+								8.	Antara berikut, yang manakah merupakan kemasan lantai yang sesuai untuk ruang kediaman?
+							</p>
+							<table>
+								<thead>
+									<td></td>
+									<td>Jenis ruang</td>
+									<td>Kemasan lantai</td>
+								</thead>							
+								<tr>
+									<td><input name="q8" id="q8a" type="radio" /></td>
+									<td>Bilik mandi</td>
+									<td>Marmar</td>
+								</tr>
+								<tr>
+									<td><input name="q8" id="q8b" type="radio" /></td>
+									<td>Bilik tidur</td>
+									<td>Parquet</td>
+								</tr>								
+								<tr>	
+									<td><input name="q8" id="q8c" type="radio" /></td>
+									<td>Garaj</td>
+									<td>Terazo</td>
+								</tr>
+								<tr>
+									<td><input name="q8" id="q8d" type="radio" /></td>
+									<td>Ruang tamu</td>
+									<td>Mozek</td>
+								</tr>								
+							</table>
+						</div>		
+
+						<hr />		
+
+						<div id="q9" class="question">
+							<p class="soalan">9.	Maklumat berikut berkaitan dengan keselesaan tempat kediaman.</p>
+							<blockquote>
+								<ul>
+									<li>Pintu</li>
+									<li>Tingkap</li>
+									<li>Kekisi</li>
+								</ul>
+							</blockquote>
+							<p>Pemasangan alatan di tempat kediaman adalah berkaitan dengan faktor keselesaan</p>
+							<p class="gap">	
+								I. pengudaraan<br />
+								II.	pencahayaan<br />
+								III. skema warna<br />
+								IV.	alatan dan kelengkapan
+							</p>
+							<table>
+								<tr>
+									<td><label><input name="q9" id="q9a" type="radio" /> I dan II</label></td>
+									<td><label><input name="q9" id="q9b" type="radio" /> I dan IV</label></td>
+								</tr>
+								<tr>
+									<td><label><input name="q9" id="q9c" type="radio" /> II dan III</label></td>
+									<td><label><input name="q9" id="q9d" type="radio" /> III dan IV</label></td>								
+								</tr>
+							</table>
+						</div>
+						
+						<hr />			
+
+						<div id="q10" class="question">
+							<p class="soalan"> 
+								10.	Apakah jenis ruang yang digunakan untuk menyedia dan memasak makanan dan minuman?
+							</p>
+							<table>
+								<tr>
+									<td><label><input name="q10" id="q10a" type="radio" />Ruang persendirian</label><br />
+									<label><input name="q10" id="q10b" type="radio" /> Ruang kerja</label><br />
+									<label><input name="q10" id="q10c" type="radio" /> Ruang sosial</label><br />
+									<label><input name="q10" id="q9d" type="radio" /> Ruang peribadi</label></td>								
+								</tr>
+							</table>
+						</div>
+						
+						<hr />							
+						
+						<p><input id="submit" class="submit" type="submit" value="Semak" /></p>
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>

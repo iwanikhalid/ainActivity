@@ -10,6 +10,7 @@ a:active, a:visited { color: #365a98; }
 h1 { font-size: 22px; }
 h2 { font-size: 18px; }
 h3 { font-size: 14px; }
+hr { margin: 10px 0; border: 0; border-top: 1px solid #ccc; border-bottom: 1px solid white; }
 
 .wrap { width: 960px; margin: 0 auto; text-align: left; }
 .top { text-shadow: none; margin: 10px 0; background: #45a074; color: #fff;  padding: 3px 10px; }
@@ -172,6 +173,17 @@ span#count { color: #666; }
 .ruangtamu img.sudip { top: 21px; left: 277px; }
 .ruangtamu img.mesinjahit { top: 304px; left:642px; }
 
+/*********** ACTIVITY 5 ************************************************************************/
+
+.question .soalan { display: block; font-weight: bold; }
+.question p.gap { padding-left: 25px; }
+.question table td { padding: 0px; border: 0; text-align: left; line-height: 22px; }
+.question table input { vertical-align: -2px; }
+.question thead { background: #eee; color: #666; }
+.question label { cursor: pointer; }
+.question .wrong { color: red !important; }
+.question .correct { color: green !important; }
+
 /*************** Pagination styles */
 
 div.pagination { margin: 20px 0 0 0; text-shadow: none;}
@@ -196,6 +208,8 @@ html>body .pagination { padding: 0; }
 .alignl { text-align: left; }
 .alignc { text-align: center !important; }
 .reset, p.reset { margin-top: 0; }
+
+blockquote { padding: 10px; background: #eee; }
 
 /**************** Form Styles **/
 
